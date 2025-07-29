@@ -1,6 +1,6 @@
 import java.util.*;
 class Marks{
-    Integer rollno;static int r;//index;
+    Integer rollno;//static int r;//index;
     static int numberofstudents=0;static float avg=0;
     float marks[]=new float[5];
     String grade[]=new String[5];
@@ -9,7 +9,7 @@ class Marks{
     String status; 
     static int rank[];
     static float rankmarks[];
-    static void Setrank(){rank=new int[r];rankmarks=new float[r];}
+    //static void Setrank(){rank=new int[r];rankmarks=new float[r];}
      static float classavg()
            {avg/=numberofstudents;
             return avg;
@@ -48,12 +48,12 @@ Marks()
                    else if(marks[i]<50 && marks[i]>=0){grade[i]="F";}
                    else {System.out.println("Error!! Please enter suitable answer");i--;continue;}
                    total+=marks[i];
-               } if(marks[0]>=50 && marks[1]>=50 && marks[2]>=50 && marks[3]>=50 && marks[4]>=50){status="PASS";r++;}
+               } if(marks[0]>=50 && marks[1]>=50 && marks[2]>=50 && marks[3]>=50 && marks[4]>=50){status="PASS";}//r++;}
            else {status="FAIL";}
                 avg+=total;numberofstudents++;
 }
 static void CalcRank(Marks a[]) {
-    Setrank();
+   // Setrank();
     int passCount = 0;
     for (Marks m : a) {
         if (m.status.equals("PASS")) passCount++;
