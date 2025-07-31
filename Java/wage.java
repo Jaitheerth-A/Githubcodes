@@ -32,9 +32,9 @@ class worker
 
    static void show(worker w[])
    {
-    System.out.println("EMPLOYEE\t\tPAY");
+    System.out.println("EMPLOYEE\t\tPAY\t\tHOURS");
     for(worker a:w)
-    {System.out.println(a.empno+"\t\t"+a.pay);}
+    {System.out.println(a.empno+"\t\t"+a.pay+"\t\t"+a.hours);}
     }
 
 }
