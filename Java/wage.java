@@ -16,9 +16,9 @@ class worker
    double calc(int hours)
    {
      this.hours=hours;
-     if(hours>40)
-     {pay+=((hours%40)*1.5);}
-      pay+=(hours-(hours%40))*hourlywage;
+     if(hours<40)
+     {pay+=(hours*hourlywage);}
+else{pay+=(hours-40)*hourlywage*1.5;pay+=hourleywage*40;}
       return pay;
    }
     static void setHourlyWage(float hw)
