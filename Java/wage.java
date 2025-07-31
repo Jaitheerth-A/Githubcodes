@@ -18,7 +18,7 @@ class worker
      this.hours=hours;
      if(hours<40)
      {pay+=(hours*hourlywage);}
-else{pay+=(hours-40)*hourlywage*1.5;pay+=hourleywage*40;}
+else{pay+=(hours-40)*hourlywage*1.5;pay+=hourlywage*40;}
       return pay;
    }
     static void setHourlyWage(float hw)
