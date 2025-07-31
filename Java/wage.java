@@ -25,8 +25,8 @@ else{pay+=(hours-40)*hourlywage*1.5;pay+=hourlywage*40;}
     {
       while(true){
       hourlywage=hw;
-       if(hw<0){System.out.println("Hourly wage cannot be negative!");}
-       else{break;}
+       if(hw<0){System.out.println("Hourly wage cannot be negative!"); continue;}
+       break;
        }
     }
 
